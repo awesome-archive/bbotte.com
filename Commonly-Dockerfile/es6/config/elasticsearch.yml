@@ -1,0 +1,20 @@
+cluster.name: ${CLUSTERNAME:cluster-es}
+network.host: 0.0.0.0
+path.data: /data/elasticsearch/data
+path.logs: /data/elasticsearch/logs
+http.cors.enabled: true
+http.cors.allow-origin: "*" 
+
+xpack.ml.enabled: ${XPACKML:false}
+xpack.monitoring.enabled: ${XPACKMONITORING:false}
+xpack.security.enabled: ${XPACKSEC:false}
+xpack.watcher.enabled: ${XPACKWATCHER:false}
+xpack.monitoring.collection.enabled: ${XPACKCOLLECTION:false}
+
+node.name: ${POD_NAME:${HOSTNAME}}
+bootstrap.memory_lock: ${MEMORY_LOCK:true}
+discovery.zen.ping.unicast.hosts: ${DIS_HOSTS:${HOSTNAME}}
+discovery.zen.minimum_master_nodes: ${DIS_NUMBER:1}
+
+node.master: ${NODE_MASTER:true}
+node.ingest: ${NODE_INGEST:true}

@@ -1,0 +1,8 @@
+title: "Linux工匠"
+description: "关注运维自动化|Python开发|linux高可用集群|数据库维护|性能提优|系统架构"
+show_downloads: "true"
+theme: jekyll-theme-cayman
+github:
+  zip_url: https://bbotte.github.io
+  another_url: https://bbotte.github.io
+  tar_url: https://github.com/bbotte/bbotte.github.io
